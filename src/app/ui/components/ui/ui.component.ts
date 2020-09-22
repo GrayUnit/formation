@@ -7,13 +7,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UiComponent implements OnInit {
 
-  public title: string;
   public menuIsOpen: boolean;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.title = "Titre de mon application";
     this.menuIsOpen = false;
   }
 
