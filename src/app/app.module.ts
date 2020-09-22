@@ -25,7 +25,6 @@ import { TextModule } from './text/text.module';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    ClientsModule,
     CoreModule,
     TemplatesModule,
     SharedModule,
