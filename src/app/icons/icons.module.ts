@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { IconMenuComponent } from './components/icon-menu/icon-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [IconMenuComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FontAwesomeModule,
+  ],
+  exports: [
+    IconMenuComponent
   ]
 })
 export class IconsModule { }
