@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import {
   Routes,
-  RouterModule,, PreloadAllModules
+  RouterModule,
+  PreloadAllModules,
 } from '@angular/router';
 import { PageLoginComponent } from './login/pages/page-login/page-login.component';
 
