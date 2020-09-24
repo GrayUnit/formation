@@ -41,6 +41,12 @@ export class PageListOrdersComponent implements OnInit {
       event.target.value = item.state;
     });
   }
+
+  public testButton() {
+    alert("Click sur le bouton");
+  }
+
+
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
   }
