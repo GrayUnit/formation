@@ -34,8 +34,11 @@ export class PageListOrdersComponent implements OnInit {
   }
 
   public changeState(item: Order, event) {
-    this.ordersService.changeState(item, event.target.value).subscribe((result) => {
+    this.ordersService.changeState(item, event.target.value).subscribe(
+      (result) => {
        item.state = result.state;
+    }, (error) => {
+      event.target.value = item.state;
     });
   }
   ngOnDestroy(): void {
