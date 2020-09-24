@@ -6,7 +6,7 @@ export class Client implements ClientI {
   ca: number;
   comment: string;
   state: string;
-  tva: number = 20;
+  tva: number = 10;
 
   constructor(obj?: Partial<Client>) {
     if(obj) {

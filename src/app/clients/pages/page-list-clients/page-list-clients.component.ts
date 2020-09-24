@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Client } from 'src/app/shared/models/client';
 import { ClientsService } from '../../services/clients.service';
 
 @Component({
@@ -9,14 +10,24 @@ import { ClientsService } from '../../services/clients.service';
 export class PageListClientsComponent implements OnInit, OnDestroy {
 
   private subscription: any;
+  public headersClient: string[];
+  public collectionClient: Client[];
+
   constructor(private clientService: ClientsService) { }
 
   ngOnInit(): void {
     this.subscription = this.clientService.collection.subscribe(
       (datas) => {
-        console.log(datas);
+       this.collectionClient = datas;
       }
-    )
+    );
+    this.headersClient = [
+      "Nom",
+      "Chiffre d'affaire",
+      "Commentaire",
+      "Etat",
+      "TVA"
+    ]
   }
 
   ngOnDestroy(): void {
