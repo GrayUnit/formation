@@ -18,7 +18,7 @@
       </td>
       <td>
         <app-icon-update (click)="edit(item)"></app-icon-update>
-        <app-icon-delete></app-icon-delete>
+        <app-icon-delete (click)="deleteItem(item)"></app-icon-delete>
       </td>
     </tr>
   </app-table-dark>
@@ -47,7 +47,7 @@
       </td>
       <td>
         <app-icon-update (click)="edit(item)"></app-icon-update>
-        <app-icon-delete></app-icon-delete>
+        <app-icon-delete (click)="deleteItem(item)"></app-icon-delete>
       </td>
     </tr>
   </app-table-dark>
