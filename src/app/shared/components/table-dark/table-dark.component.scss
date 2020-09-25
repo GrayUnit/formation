@@ -13,3 +13,15 @@
     background-color: $color-success;
   }
 }
+
+app-template-a {
+  .table-dark {
+    color: #fff;
+  }
+}
+
+app-template-b {
+  .table-dark {
+    color: $color2;
+  }
+}

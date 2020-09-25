@@ -39,6 +39,26 @@
       "client": "Atos",
       "comment": "Comment pour Atos",
       "id": 4
+    },
+    {
+      "tjmHt": "500",
+      "nbJours": "70",
+      "tva": "20",
+      "state": "CANCEL",
+      "client": "Testeur",
+      "comment": "J'en espérais rien",
+      "typePresta": "Mon premier test",
+      "id": 5
+    },
+    {
+      "tjmHt": "",
+      "nbJours": 1,
+      "tva": 20,
+      "state": "OPTION",
+      "client": "Client content",
+      "comment": "fgdgdgdf",
+      "typePresta": "Mon premier test",
+      "id": 6
     }
   ],
   "clients": [
