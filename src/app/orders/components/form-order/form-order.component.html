@@ -19,8 +19,19 @@
     <div class="form-group">
       <label for="tjmHt">Tarif Journalier</label>
       <input formControlName="tjmHt" type="text" class="form-control" id="tjmHt">
-      <div class="alert alert-danger" *ngIf="form.get('tjmHt').invalid && form.get('tjmHt').touched">
+      <!-- <div class="alert alert-danger" *ngIf="form.get('tjmHt').errors?.required && form.get('tjmHt').touched">
         Ce champs est requis.
+      </div>
+      <div class="alert alert-danger" *ngIf="form.get('tjmHt').errors?.minLength && form.get('tjmHt').touched">
+        Taille minimum 3 char.
+      </div> -->
+      <div invalidMessage="tjmHt" class="alert alert-danger">
+        <p *invalidType="'required'">
+          Champs obligatoire
+        </p>
+        <p *invalidType="'minlength'">
+          Min 3 char.
+        </p>
       </div>
     </div>
 

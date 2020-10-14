@@ -4,10 +4,10 @@
       "tjmHt": 1200,
       "nbJours": 1,
       "tva": 20,
-      "state": "OPTION",
-      "typePresta": "formation55",
+      "state": "CANCEL",
       "client": "M2i",
-      "comment": "merci m2i",
+      "comment": "merci",
+      "typePresta": "formation55",
       "id": 1
     },
     {
@@ -15,9 +15,9 @@
       "nbJours": 1,
       "tva": 20,
       "state": "OPTION",
-      "typePresta": "Formation",
       "client": "nemesys",
-      "comment": "fssdgh",
+      "comment": "commentaire",
+      "typePresta": "Formation",
       "id": 3
     },
     {
