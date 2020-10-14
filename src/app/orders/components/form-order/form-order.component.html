@@ -2,22 +2,22 @@
   <form [formGroup]="form">
 
     <div class="form-group">
-      <label for="typePresta">Type</label>
+      <label i18n for="typePresta">Type</label>
       <input formControlName="typePresta" type="text" class="form-control" id="typePresta">
     </div>
 
     <div class="form-group">
-      <label for="client">Client</label>
+      <label i18n for="client">Client</label>
       <input formControlName="client" type="text" class="form-control" id="client">
     </div>
 
     <div class="form-group">
-      <label for="nbJours">Nombre de jours</label>
+      <label i18n for="nbJours">Nombre de jours</label>
       <input formControlName="nbJours" type="text" class="form-control" id="nbJours">
     </div>
 
     <div class="form-group">
-      <label for="tjmHt">Tarif Journalier</label>
+      <label i18n for="tjmHt">Tarif Journalier</label>
       <input formControlName="tjmHt" type="text" class="form-control" id="tjmHt">
       <!-- <div class="alert alert-danger" *ngIf="form.get('tjmHt').errors?.required && form.get('tjmHt').touched">
         Ce champs est requis.
@@ -26,22 +26,22 @@
         Taille minimum 3 char.
       </div> -->
       <div invalidMessage="tjmHt" class="alert alert-danger">
-        <p *invalidType="'required'">
+        <p *invalidType="'required'" i18n>
           Champs obligatoire
         </p>
-        <p *invalidType="'minlength'">
+        <p *invalidType="'minlength'" i18n>
           Min 3 char.
         </p>
       </div>
     </div>
 
     <div class="form-group">
-      <label for="tva">Tva</label>
+      <label i18n for="tva">Tva</label>
       <input formControlName="tva" type="text" class="form-control" id="tva">
     </div>
 
     <div class="form-group">
-      <label for="state">Etat</label>
+      <label i18n for="state">Etat</label>
       <select formControlName="state" class="form-control" id="state">
         <option *ngFor="let state of states"
                 [ngValue]="state">
@@ -51,7 +51,7 @@
     </div>
 
     <div class="form-group">
-      <label for="comment">Commentaire</label>
+      <label i18n for="comment">Commentaire</label>
       <input formControlName="comment" type="text" class="form-control" id="comment">
     </div>
 
