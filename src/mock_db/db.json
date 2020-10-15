@@ -4,7 +4,7 @@
       "tjmHt": 500,
       "nbJours": 1,
       "tva": 20,
-      "state": "OPTION",
+      "state": "CONFIRMED",
       "client": "Christophe2",
       "comment": "commentaire",
       "typePresta": "Formation",
@@ -26,6 +26,18 @@
       "tva": 20,
       "state": "OPTION",
       "client": "Toto",
+      "comment": "commentaire",
+      "typePresta": "Formation",
+      "id": 3
+    }
+  ],
+  "orders2": [
+    {
+      "tjmHt": 500,
+      "nbJours": 1,
+      "tva": 20,
+      "state": "OPTION",
+      "client": "Christophe2",
       "comment": "commentaire",
       "typePresta": "Formation",
       "id": 3
