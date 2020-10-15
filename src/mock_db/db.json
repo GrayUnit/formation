@@ -1,16 +1,6 @@
 {
   "orders": [
     {
-      "tjmHt": 1200,
-      "nbJours": 1,
-      "tva": 20,
-      "state": "CANCEL",
-      "client": "M2i",
-      "comment": "merci",
-      "typePresta": "formation55",
-      "id": 1
-    },
-    {
       "tjmHt": 500,
       "nbJours": 1,
       "tva": 20,
@@ -39,13 +29,6 @@
       "name": "Christophe2",
       "ca": 12000,
       "comment": "un comment pour client christophe2"
-    },
-    {
-      "state": "Active",
-      "id": 2,
-      "name": "Modis",
-      "ca": 120000,
-      "comment": "un comment pour client modis"
     }
   ]
 }

@@ -16,7 +16,7 @@ export class PageListClientsComponent implements OnInit, OnDestroy {
   constructor(private clientService: ClientsService) { }
 
   ngOnInit(): void {
-    this.subscription = this.clientService.collection.subscribe(
+    this.clientService.collection.subscribe(
       (datas) => {
        this.collectionClient = datas;
       }
@@ -26,12 +26,25 @@ export class PageListClientsComponent implements OnInit, OnDestroy {
       "Chiffre d'affaire",
       "Commentaire",
       "Etat",
-      "TVA"
+      "TVA",
+      "Actions"
     ]
   }
 
+  public deleteItem(item: Client) {
+    this.clientService.deleteItem(item).subscribe(
+      (result) => {
+        this.clientService.collection.subscribe(
+          (datas) => {
+            this.collectionClient = datas;
+          }
+        )
+      }
+    )
+  }
+
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    //this.subscription.unsubscribe();
   }
 
 }
