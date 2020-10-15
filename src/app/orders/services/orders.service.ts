@@ -52,4 +52,14 @@ export class OrdersService {
   public getOrderById(id: string): Observable<Order> {
     return this.http.get<Order>(`${this.urlApi}orders/${id}`);
   }
+
+  public getOrderByClientName(name: string): Observable<Order[]> {
+    return this.http.get<Order[]>(`${this.urlApi}orders?client=${name}`).pipe(
+      map((col) => {
+        return col.map((item) => {
+          return new Order(item);
+        })
+      })
+    )
+  }
 }

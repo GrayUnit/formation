@@ -5,7 +5,7 @@
       "nbJours": 1,
       "tva": 20,
       "state": "OPTION",
-      "client": "nemesys",
+      "client": "Christophe2",
       "comment": "commentaire",
       "typePresta": "Formation",
       "id": 3
@@ -16,9 +16,19 @@
       "tva": 20,
       "state": "CONFIRMED",
       "typePresta": "Formation",
-      "client": "Atos",
+      "client": "Christophe2",
       "comment": "Comment pour Atos",
       "id": 4
+    },
+    {
+      "tjmHt": 500,
+      "nbJours": 1,
+      "tva": 20,
+      "state": "OPTION",
+      "client": "Toto",
+      "comment": "commentaire",
+      "typePresta": "Formation",
+      "id": 3
     }
   ],
   "clients": [
@@ -27,6 +37,14 @@
       "tva": 20,
       "id": 1,
       "name": "Christophe2",
+      "ca": 12000,
+      "comment": "un comment pour client christophe2"
+    },
+    {
+      "state": "Active",
+      "tva": 20,
+      "id": 2,
+      "name": "Toto",
       "ca": 12000,
       "comment": "un comment pour client christophe2"
     }
